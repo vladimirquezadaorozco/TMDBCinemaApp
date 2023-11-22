@@ -6,6 +6,7 @@ import  Backup  from  "../assets/backup.png"
 export const MovieDetail = () => {
   const params = useParams();
   const [data, setData] = useState({});
+  //eslint-disable-next-line
   const pageTitle = useTitle(data.title)
   const image = data.poster_path ? `https://image.tmdb.org/t/p/w500/${data.poster_path}` : Backup ;
 
